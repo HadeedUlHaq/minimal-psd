@@ -1,0 +1,21 @@
+// article
+.articelsection {
+  text-align: justify;
+  border-bottom: 5px solid #0481c2;
+  display: grid;
+  margin-top: 30px;
+  padding-bottom: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  article {
+    h2 {
+      color: #0481c2;
+      font-weight: 500;
+      padding-top: 10px;
+      font-size: 18px;
+    }
+    p {
+      padding: 10px 0px;
+    }
+  }
+}

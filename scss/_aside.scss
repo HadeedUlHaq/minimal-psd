@@ -1,0 +1,49 @@
+// aside
+aside {
+  text-align: justify;
+  border-top: 5px solid #0481c2;
+  border-bottom: 5px solid #0481c2;
+  padding-top: 15px;
+  .searchbar {
+    position: relative;
+    input {
+      border:  1px solid #000;
+      width: 100%;
+      padding: 8px 05px;
+      font-size: 15px;
+    }
+    ::placeholder{
+      font-size: 12px;
+      padding: 10px;
+      }
+    img {
+      position: absolute;
+      width: 25px;
+      right: 10px;
+      top: 8px;
+      cursor: pointer;
+    }
+  } 
+  h2{
+    color: #0481c2;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #878787;
+  }
+  .asidewrap {
+    margin-top: 10px;
+    padding-top: 10px;
+    h5 {
+      color: #0481c2;
+      font-weight: 400;
+      font-size: 16px;
+      padding: 10px 0px;
+    }
+    .lik{
+    border-bottom: 1px solid #404040;
+    a{
+    margin: 10px 0;}
+    }
+  }
+}
