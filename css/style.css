@@ -13,9 +13,6 @@ body {
   width: 100%;
   padding: 30px;
 }
-body img {
-  width: 100%;
-}
 body ul li {
   list-style: none;
   display: inline-block;
@@ -24,87 +21,95 @@ body a {
   text-decoration: none;
 }
 
-header {
+#mainheader {
   display: flex;
   justify-content: space-between;
   padding-bottom: 25px;
 }
-header .logo {
+#mainheader .logo {
   width: 120px;
 }
-header ul li a {
+#mainheader ul li #active {
+  color: #0481c2;
+}
+#mainheader ul li a {
   padding: 10px 10px;
   display: block;
   font-size: 18px;
   color: #878787;
 }
-header ul li:first-child a {
+#mainheader ul li a:hover {
   color: #0481c2;
 }
 
-main {
+#maincontent {
   display: grid;
   grid-template-columns: 25% auto;
   grid-gap: 10px;
 }
-main p {
+#maincontent p {
   font-size: 13px;
-  color: #353434;
 }
-main a {
+#maincontent a {
   padding: 10px 0px;
   display: block;
   font-size: 15px;
   color: #6b6b6b;
 }
+#maincontent a:hover {
+  color: #000;
+}
 
-aside {
+.leftcontent {
   text-align: justify;
   border-top: 5px solid #0481c2;
   border-bottom: 5px solid #0481c2;
   padding-top: 15px;
 }
-aside .searchbar {
+.leftcontent .searchbar {
   position: relative;
 }
-aside .searchbar input {
+.leftcontent .searchbar input {
   border: 1px solid #000;
   width: 100%;
   padding: 8px 5px;
   font-size: 15px;
 }
-aside .searchbar ::placeholder {
+.leftcontent .searchbar ::placeholder {
   font-size: 12px;
   padding: 10px;
 }
-aside .searchbar img {
+.leftcontent .searchbar img {
   position: absolute;
   width: 25px;
   right: 10px;
   top: 8px;
   cursor: pointer;
 }
-aside h2 {
+.leftcontent h2 {
   color: #0481c2;
   font-weight: 400;
   margin: 10px 0;
   padding: 10px 0;
   border-bottom: 1px solid #878787;
 }
-aside .asidewrap {
+.leftcontent .asidewrap {
   margin-top: 10px;
   padding-top: 10px;
 }
-aside .asidewrap h5 {
+.leftcontent .asidewrap h5 {
   color: #0481c2;
   font-weight: 400;
   font-size: 16px;
   padding: 10px 0px;
 }
-aside .asidewrap .lik {
+.leftcontent .asidewrap .lik {
   border-bottom: 1px solid #404040;
 }
-aside .asidewrap .lik a {
+.leftcontent .asidewrap .lik:hover {
+  color: #000;
+}
+.leftcontent .asidewrap .lik a {
   margin: 10px 0;
 }
 
@@ -127,9 +132,12 @@ aside .asidewrap .lik a {
   padding: 10px 0px;
 }
 
-section {
+.middle {
   border-top: 5px solid #0481c2;
   padding-top: 15px;
+}
+.middle img {
+  width: 100%;
 }
 
 .imgsec {
@@ -167,15 +175,26 @@ section {
   text-align: justify;
 }
 
-footer {
+#mainfooter .social {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-image: url(/img/sprite.png);
+  background-repeat: no-repeat;
   align-items: center;
-  padding: 10px 0px;
+  margin-top: 10px;
 }
-footer img {
-  width: auto;
+#mainfooter .social .list li {
+  list-style-type: none;
+}
+#mainfooter .social .list li a button {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

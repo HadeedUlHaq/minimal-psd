@@ -1,5 +1,5 @@
 // header
-header {
+#mainheader {
   display: flex;
   justify-content: space-between;
   padding-bottom: 25px;
@@ -7,14 +7,17 @@ header {
     width: 120px;
   }
   ul li {
+    #active{
+      color: #0481c2;
+    }
     a {
       padding: 10px 10px;
       display: block;
       font-size: 18px;
       color: #878787;
-    }
-    &:first-child a {
-      color: #0481c2;
+      &:hover{
+        color: #0481c2;
+      }
     }
   }
 }

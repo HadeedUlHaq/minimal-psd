@@ -8,13 +8,15 @@
 	<link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-	<header>
+	<header id="mainheader">
 		<div class="logo">
-			<img src="./img/logo.png" alt="" />
+			<a href="#">
+				<img src="./img/logo.png" alt="" />
+			</a>
 		</div>
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a id="active" href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Portfolio</a></li>
 				<li><a href="#">Blog</a></li>
@@ -22,16 +24,16 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main id="maincontent">
 		<!-- aside -->
-		<aside>
-			<div class="searchbar">
+		<aside class="leftcontent">
+			<form class="searchbar">
 				<input type="text" placeholder="search..." />
 				<img src="./img/btn-go.png" alt="" />
-			</div>
+			</form>
 			<h2>Latest news</h2>
 			
-			<div class="asidewrap">
+			<article class="asidewrap">
 				<h5>Ineger vel falis at metus rhoncus</h5>
 				<p>
 					Vestibulum vel sem nibh. Nullam ut elit
@@ -42,8 +44,8 @@
 				<div class="lik">
 					<a href="#">Read more...</a>
 				</div>
-			</div>
-			<div class="asidewrap">
+			</article>
+			<article class="asidewrap">
 				<h5>Ineger vel falis at metus rhoncus</h5>
 				<p>
 					Vestibulum vel sem nibh. Nullam ut elit
@@ -54,11 +56,11 @@
 				<div class="lik">
 					<a href="#">Read more...</a>
 				</div>
-			</div>
+			</article>
 		</aside>
 
 		<!-- section -->
-		<section>
+		<section class="middle">
 			<div class="imgsec">
 				<img src="./img/img01.jpg" alt="" class="headimg" />
 				<div class="overlay"></div>
@@ -116,9 +118,17 @@
 	</main>
 
 	<!-- footer -->
-	<footer>
-		<img src="./img/sprite.png" alt="" />
-		<small>Copyright &copy; 2010 Minimal. All rights reserved.</small>
+	<footer id="mainfooter">
+		<div class="social">
+			<ul class="list">
+				<li><a href=""> <button></button></a></li>
+				<li><a href=""><button></button></a></li>
+				<li><a href=""><button></button></a></li>
+				<li><a href=""><button></button></a></li>
+				<li><a href=""><button></button></a></li>
+			</ul>
+			<small>Copyright &copy; 2010 Minimal. All rights reserved.</small>
+		</div>
 	</footer>
 </body>
 

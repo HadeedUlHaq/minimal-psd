@@ -1,7 +1,10 @@
 // section
-section {
+.middle {
   border-top: 5px solid #0481c2;
   padding-top: 15px;
+  img{
+    width: 100%;
+  }
 }
 .imgsec {
   position: relative;

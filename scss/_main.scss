@@ -1,16 +1,18 @@
 // main
-main {
+#maincontent {
   display: grid;
   grid-template-columns: 25% auto;
   grid-gap: 10px;
   p {
     font-size: 13px;
-    color: #353434;
   }
   a {
     padding: 10px 0px;
     display: block;
     font-size: 15px;
     color: #6b6b6b;
+        &:hover{
+      color: #000;
+    }
   }
 }

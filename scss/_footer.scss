@@ -1,11 +1,28 @@
 // footer
-footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
-  img {
-    width: auto;
-  }
+#mainfooter {
+    .social{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-image: url(/img/sprite.png);
+      background-repeat: no-repeat;
+      align-items: center;
+      margin-top: 10px;
+      .list{
+        li{
+          list-style-type: none;
+        a{
+          button{
+            outline: none;
+            border: none;
+            border-radius: 50%;
+            width: 23px;
+            height: 23px;
+            background-color: transparent;
+            cursor: pointer;
+            }
+          }
+        }
+      }
+    }
 }

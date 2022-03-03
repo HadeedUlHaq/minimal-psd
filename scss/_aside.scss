@@ -1,5 +1,5 @@
 // aside
-aside {
+.leftcontent {
   text-align: justify;
   border-top: 5px solid #0481c2;
   border-bottom: 5px solid #0481c2;
@@ -42,8 +42,12 @@ aside {
     }
     .lik{
     border-bottom: 1px solid #404040;
+    &:hover{
+      color: #000;
+    }
     a{
-    margin: 10px 0;}
+    margin: 10px 0;
+    }
     }
   }
 }
