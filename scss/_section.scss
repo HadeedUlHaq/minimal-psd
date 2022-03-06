@@ -13,7 +13,7 @@
     object-fit:cover;
   }
   .overlay{
-    position:absolute;
+    position: absolute;
     right: 0;
     width: 30%;
     height: 99%;
@@ -21,21 +21,22 @@
     top:0;
     background-color: #aaaaaa;
     }
-  .content {
+  #content {
+    font-size: 1.2vw;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    right: 14%;
+    transform: translate(50%,-50%);
     h1{
+      font-size: 1em;
       line-height: 2;
       text-align: center;
     }
-    font-size: 12px;
-    position: absolute;
-    right: 0px;
-    top: 29%;
-    color: #fff;
     p {
-      font-size: 12px;
+      word-spacing: 6px;
+      font-size: .8em;
       color: #fff;
-      padding: 10px 23px 0px 0px;
-      width: 224px;
       text-align: justify;
     }
   }

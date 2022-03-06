@@ -81,7 +81,6 @@ body a {
 }
 .leftcontent .searchbar img {
   position: absolute;
-  width: 25px;
   right: 10px;
   top: 8px;
   cursor: pointer;
@@ -156,22 +155,23 @@ body a {
   top: 0;
   background-color: #aaaaaa;
 }
-.imgsec .content {
-  font-size: 12px;
+.imgsec #content {
+  font-size: 1.2vw;
   position: absolute;
-  right: 0px;
-  top: 29%;
   color: #fff;
+  top: 50%;
+  right: 14%;
+  transform: translate(50%, -50%);
 }
-.imgsec .content h1 {
+.imgsec #content h1 {
+  font-size: 1em;
   line-height: 2;
   text-align: center;
 }
-.imgsec .content p {
-  font-size: 12px;
+.imgsec #content p {
+  word-spacing: 6px;
+  font-size: 0.8em;
   color: #fff;
-  padding: 10px 23px 0px 0px;
-  width: 224px;
   text-align: justify;
 }
 
@@ -179,7 +179,7 @@ body a {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-image: url(/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
   align-items: center;
   margin-top: 10px;
@@ -195,6 +195,59 @@ body a {
   height: 23px;
   background-color: transparent;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .leftcontent {
+    border-bottom: 0px;
+  }
+  .leftcontent h2 {
+    text-align: center;
+  }
+  .leftcontent .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  .searchbar {
+    display: none;
+  }
+
+  .imgsec .overlay {
+    width: 100%;
+  }
+  .imgsec #content {
+    right: 50%;
+    font-size: 15px;
+  }
+  .imgsec #content br {
+    display: none;
+  }
+  .imgsec #content p {
+    text-align: center;
+  }
+
+  .articelsection {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #maincontent {
+    grid-template-columns: 1fr;
+  }
+
+  #mainheader ul li a {
+    font-size: 15px;
+  }
+
+  #mainfooter .social {
+    display: block;
+    background-position: center top;
+    text-align: center;
+  }
+  #mainfooter .list {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

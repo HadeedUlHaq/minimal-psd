@@ -1,0 +1,54 @@
+@media screen and (max-width: 768px) {
+.leftcontent {
+	border-bottom: 0px;
+	h2{
+		text-align: center;
+	}
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px;
+	}
+}
+.searchbar{
+	display: none;	
+}
+.imgsec{
+	.overlay{
+		width: 100%;
+		}
+	#content{
+		right: 50%;
+		font-size: 15px;
+		br {
+			display: none;
+		}
+		p{
+			text-align: center;
+		}
+	}
+}
+.articelsection{
+	grid-template-columns: 1fr 1fr;
+}
+#maincontent {
+	grid-template-columns: 1fr;
+}
+#mainheader {
+	ul li {
+		a {
+			font-size: 15px;
+			}
+		}
+	}
+	#mainfooter{
+		.social{
+			display: block;
+			background-position: center top;
+			text-align: center;
+		}
+		.list{
+			text-align: center;
+		}
+	}
+}
